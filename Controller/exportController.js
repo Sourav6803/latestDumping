@@ -190,9 +190,9 @@ const exportData = async (req, res) => {
         });
       }
   
-      if (req.query.company_name) {
+      if (req.query.COMPANY_NAME) {
         queryConditions.push({
-          IMPORTER_NAME: { $regex: req.query.company_name, $options: 'i' }
+          IMPORTER_NAME: { $regex: req.query.COMPANY_NAME, $options: 'i' }
         });
       }
   

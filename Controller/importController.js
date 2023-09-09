@@ -131,9 +131,9 @@ const imports = async (req, res) => {
         });
       }
   
-      if (req.query.company_name) {
+      if (req.query.COMPANY_NAME) {
         queryConditions.push({
-            EXPORTER_NAME: { $regex: req.query.company_name, $options: 'i' }
+            EXPORTER_NAME: { $regex: req.query.COMPANY_NAME, $options: 'i' }
         });
       }
   
